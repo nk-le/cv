@@ -316,14 +316,6 @@ section {
     color: var(--accent-color);
 }
 
-.terminal-header::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ff5f56;
-    box-shadow: 18px 0 0 #ffbd2e, 36px 0 0 #27c93f;
-}
 
 /* ===== CODE STYLING ===== */
 .code-comment {
@@ -460,9 +452,12 @@ section {
 
 .section-subtitle {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 4rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -524,8 +519,9 @@ section {
 
 .description {
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 .social-links {
@@ -668,13 +664,14 @@ section {
 }
 
 .service-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
 .service-card p {
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 1.7;
+    text-align: left;
 }
 
 /* ===== PORTFOLIO SECTION ===== */
