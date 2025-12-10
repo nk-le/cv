@@ -6,21 +6,21 @@
 }
 
 :root {
-    --primary-color: #4285F4;
-    --secondary-color: #7B61FF;
-    --accent-color: #9B72FF;
+    --primary-color: #5B9FFF;
+    --secondary-color: #9B7FFF;
+    --accent-color: #B99AFF;
     --dark-bg: #1a1f2e;
     --darker-bg: #0f1419;
     --light-bg: #2d3748;
     --text-primary: #ffffff;
-    --text-secondary: #e2e8f0;
-    --gradient-1: linear-gradient(135deg, #4285F4 0%, #7B61FF 50%, #9B72FF 100%);
-    --gradient-2: linear-gradient(135deg, #5E9EFF 0%, #A78BFA 100%);
-    --gradient-3: linear-gradient(135deg, #9B72FF 0%, #C4B5FD 100%);
-    --shadow-sm: 0 2px 4px 0 rgba(66, 133, 244, 0.1);
-    --shadow-md: 0 4px 8px -1px rgba(66, 133, 244, 0.15);
-    --shadow-lg: 0 12px 20px -3px rgba(66, 133, 244, 0.2);
-    --shadow-xl: 0 24px 30px -5px rgba(66, 133, 244, 0.25);
+    --text-secondary: #f0f4ff;
+    --gradient-1: linear-gradient(135deg, #5B9FFF 0%, #9B7FFF 50%, #C4B0FF 100%);
+    --gradient-2: linear-gradient(135deg, #7AAFFF 0%, #BFA5FF 100%);
+    --gradient-3: linear-gradient(135deg, #C4B0FF 0%, #E0D7FF 100%);
+    --shadow-sm: 0 2px 4px 0 rgba(91, 159, 255, 0.15);
+    --shadow-md: 0 4px 8px -1px rgba(91, 159, 255, 0.2);
+    --shadow-lg: 0 12px 20px -3px rgba(91, 159, 255, 0.25);
+    --shadow-xl: 0 24px 30px -5px rgba(91, 159, 255, 0.3);
 }
 
 html {
