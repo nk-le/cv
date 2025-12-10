@@ -96,24 +96,34 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 });
 
-// Active nav link on scroll
+// Active nav link and side nav on scroll
 const sections = document.querySelectorAll('section[id]');
 
 function highlightNavLink() {
-    const scrollPosition = window.scrollY + 100;
+    const scrollPosition = window.scrollY + 200;
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
         const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+        const sideNavLink = document.querySelector(`.side-nav-link[href="#${sectionId}"]`);
         
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            // Update main nav
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
             });
             if (navLink) {
                 navLink.classList.add('active');
+            }
+            
+            // Update side nav
+            document.querySelectorAll('.side-nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            if (sideNavLink) {
+                sideNavLink.classList.add('active');
             }
         }
     });

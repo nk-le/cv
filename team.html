@@ -7,6 +7,9 @@
     <title>Our Team - LeGimini</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -17,13 +20,23 @@
                 <h2 style="display: inline; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 800;">LeGimini</h2>
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html#home" class="nav-link">Home</a></li>
-                <li><a href="index.html#about" class="nav-link">Vision</a></li>
-                <li><a href="index.html#skills" class="nav-link">Expertise</a></li>
-                <li><a href="index.html#services" class="nav-link">Services</a></li>
-                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="team.html" class="nav-link">Team</a></li>
-                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#home">Hero</a></li>
+                        <li><a href="index.html#vision">Vision</a></li>
+                        <li><a href="index.html#expertise">Expertise</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li class="dropdown">
+                    <a href="team.html" class="nav-link active">About <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -33,23 +46,25 @@
         </div>
     </nav>
 
-    <!-- Team Hero Section -->
-    <section class="hero" id="team-hero" style="min-height: 50vh;">
-        <div class="hero-content">
-            <h1 class="hero-title animate-fade-in">Meet Our Team</h1>
-            <p class="hero-subtitle animate-fade-in-delay">Expert engineers and researchers driving innovation</p>
-        </div>
-        <div class="hero-background">
-            <div class="gradient-sphere sphere-1"></div>
-            <div class="gradient-sphere sphere-2"></div>
-        </div>
-    </section>
+    <!-- Side Navigation -->
+    <div class="side-nav" id="side-nav">
+        <div class="side-nav-header">// navigate</div>
+        <a href="#team" class="side-nav-link active">
+            <span class="side-nav-bullet">></span> Team
+        </a>
+        <a href="#contact" class="side-nav-link">
+            <span class="side-nav-bullet">></span> Contact
+        </a>
+    </div>
 
     <!-- Team Members Section -->
-    <section class="about" style="background: var(--dark-bg); padding: 4rem 0;">
+    <section class="about page-section" id="team" style="background: var(--dark-bg); padding: 6rem 0;">
         <div class="container">
-            <h2 class="section-title">Co-Founders</h2>
-            <p class="section-subtitle">Complementary expertise in embedded systems and artificial intelligence</p>
+            <div class="terminal-header">
+                <span class="terminal-title">$ whoami && cat team.json</span>
+            </div>
+            <h2 class="section-title">// Co-Founders</h2>
+            <p class="section-subtitle">/* Complementary expertise in embedded systems and artificial intelligence */</p>
             
             <!-- Co-Founders Grid -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 3rem; margin-top: 3rem;">
@@ -136,19 +151,72 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="services" style="background: var(--darker-bg); padding: 4rem 0;">
-        <div class="container" style="text-align: center;">
-            <h2 class="section-title">Join Our Team</h2>
-            <p class="section-subtitle">We're always looking for talented individuals to collaborate with</p>
-            <a href="index.html#contact" class="btn btn-primary" style="margin-top: 2rem;">Get in Touch</a>
+    <!-- Contact Section -->
+    <section class="contact page-section" id="contact">
+        <div class="container">
+            <div class="terminal-header">
+                <span class="terminal-title">$ echo "contact@legemini.com" | sendmail</span>
+            </div>
+            <h2 class="section-title">// Get In Touch</h2>
+            <p class="section-subtitle">/* Let's discuss your next innovative project */</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:contact@legemini.com" style="color: inherit; text-decoration: none;">contact@legemini.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Munich, Germany</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Availability</h3>
+                            <p>Available for consulting and project collaboration</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/khanhln/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/nk-le" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:contact@legemini.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="// Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="// Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="// Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="/* Your Message */" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">> Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 LeGimini. All rights reserved.</p>
+            <p><span class="code-comment">//</span> &copy; 2025 LeGimini. All rights reserved.</p>
             <p>Advanced Embedded Systems & AI Solutions</p>
         </div>
     </footer>
