@@ -1,0 +1,396 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{ulem}
+\usepackage{amsmath}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Hoang Le Doan} \\ \vspace{1pt}
+    Helene Mayer Ring 7 , 80809, Munich \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +4917622929837 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{doanhoang1404@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/hoang-le-doan-498393156/}{\raisebox{-0.2\height}\faLinkedin\ \underline{Linkedin}}  ~
+    \href{https://github.com/hoangledoan}{\raisebox{-0.2\height}\faGithub\ \underline{Github}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical University of Munich}{April 2024 -- Present}
+      {Master of Robotics, Cognition, Intelligence}{Munich, Bavaria}
+    \resumeSubheading
+      {Technical University of Munich}{October 2020 -- April 2024}
+      {Bachelor of Electrical and Computer Engineering}{Munich, Bavaria}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Techinical Skills and Knowledge}
+    \resumeSubHeadingListStart
+            \begin{multicols}{6}
+        \begin{itemize}[itemsep=-5pt, parsep=3pt]
+            \item\small Python
+            \item C++
+            \item OpenMP/MPI
+            \item TVM
+            \item TensorFlow
+            \item PyTorch
+            \item ROS
+            \item Docker
+            \item Azure/AWS
+            \item SQL/NoSQL
+            \item Kubernetes
+            \item CUDA
+        \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Relevant Experience}
+  \resumeSubHeadingListStart
+    % \resumeSubheading
+    % {Stealth Startup}{April 2025}
+    % {Consultant \vspace{6pt}}{Munich, Germany}
+    % \small\uline{Project: Real-Estate Intelligence}
+    % \resumeItemListStart
+    %     \resumeItem{Collaborated with stakeholders to capture requirements and translate business needs into scalable ML and data solutions.}
+    %     \resumeItem{Architected and implemented an end-to-end internal platform: data ingestion pipelines, data warehouse, ML training (incl. PyTorch, SHAP), and BI dashboards.}
+    %     \resumeItem{Built, containerized, and deployed ML services using Docker and Kubernetes for reliable, scalable production workflows.}
+    %     \resumeItem{Developed interactive internal tools and dashboards with TypeScript, React, Tailwind, HTML, and CSS to enable data-driven decision-making.}
+    %     \resumeItem{Implemented MLOps practices for model tracking, monitoring, and compliance with reproducibility and regulatory standards.}
+    % \resumeItemListEnd
+    % \uline{Worked with:}
+    % \text{ Python $|$ PyTorch $|$ SHAP $|$ Apache Airflow $|$ Docker $|$ Kubernetes $|$ TypeScript $|$ React $|$ Tailwind $|$ SQL $|$ BI Tools}
+    % \vspace{0.5em}
+
+
+  
+    \resumeSubheading
+    {Siemens}{June 2025}
+    {Working Student in A.I Research \vspace{6pt}} {Munich, Germany}
+    \small\uline{Project: Multi-Agent System}
+    \resumeItemListStart
+        \resumeItem{Designed and implemented a multi-agent system orchestrating language, vision-language, and web models to automate web application testing}
+        \resumeItem{Designed and implemented an agentic AI observability system to capture, trace, and analyze logs from industrial edge applications, improving workflow efficiency and reliability}
+        \resumeItem{Deployed and benchmarked lightweight large language models on Siemens industrial edge devices. Built and integrated a Q\&A chatbot into Siemens’ internal systems.}
+        \resumeItemListEnd
+    \uline{Worked with:}
+    \text{ Pytorch $|$ TensorRT-LLM $|$ MCP $|$ MQTT $|$ Docker}
+    \vspace{0.5em}
+    
+    \resumeSubheading
+    {Intel}{November 2024}
+    {Research Internship \vspace{6pt}} {Munich, Germany}
+    \small\uline{Project: Large Language Models compression and efficient deployment.}
+    \resumeItemListStart
+        \resumeItem{Conducted comparative benchmarking of Llama modeols on Intel Xeon processors with 160 cores leveraging AMX instructions, evaluating energy efficiency, latency, and cost against GPU-based performance.}
+        \resumeItem{Researched and applied optimization methods for LLM in CPU (weight-only-quantization, speculative decoding), gained 4 times inference speed}
+        \resumeItem{Built a distributed pipeline for fine-tuning and inference, utilizing LoRA to optimize memory and efficiency.}
+        \resumeItem{Developed a framework for sustainable AI deployment on CPU architectures, contributing to research on scalable, distributed, and energy-efficient AI solutions, with findings to be published in an upcoming research paper.}
+        \vspace{0.5em}
+        \resumeItemListEnd
+    \uline{Worked with:}
+    \text{ Pytorch $|$ OpenVINO $|$ LoRA $|$ Deepspeed $|$ Docker}
+    \vspace{0.5em}
+
+    
+    \resumeSubheading
+    {Infineon}{October 2024}
+    {Working Student in A.I. deployment \vspace{6pt}} {Neubiberg, Germany}
+    \small\uline{Project: Machine Learning compilation toolchain}
+    \resumeItemListStart
+        \resumeItem{Contributed to the Apache TVM project by identifying and resolving quantization bugs for ARM architecture}
+        \resumeItem{Explored AI Edge Torch and ExecuTorch frameworks, analyzing across various models}
+        \resumeItem{Optimize Torch, TFlite, ONNX models by compiling with CMSIS-NN through TVM’s AOT and measure the performances}
+        \vspace{0.5em}
+        \resumeItemListEnd
+    \uline{Worked with:}
+    \text{ Pytorch $|$ C++ $|$ TVM $|$ Tensorflow}
+    \vspace{0.5em}
+
+    \resumeSubheading
+    {TUM}{October 2024}
+    {Practical course \vspace{6pt}} {Munich, Germany}
+    \small\uline{Project: IoT Smart Library.}
+    \resumeItemListStart
+        \resumeItem{Developed an edge AI pipeline using ESP32-CAM modules and MQTT to transmit JPEG-compressed images to a Raspberry Pi for real-time people monitoring.}
+        \resumeItem{Optimized 2 \>90\% accurate SSD-Mobilenetv2 models with structural pruning, INT8 quantization, and quantization-aware training, reducing memory usage by 4× and improving inference speed by 90\%.}
+        \resumeItem{Dockerized the entire system and integrated NFC card reader support.}
+        \vspace{0.5em}
+        \resumeItemListEnd
+    \uline{Worked with:}
+    \text{ Pytorch $|$ C++ $|$ MQTT $|$ Docker $|$ TVM}
+    \vspace{0.5em}
+    
+    % \resumeSubheading
+    %     {FEV}{May 2024}
+    %     {Student Assistant in E/E - Electric Drives \vspace{6pt}} {Munich, Germany}
+    %     \small\uline{Project: New Electric Powertrains Development.}
+    %     \resumeItemListStart
+    %         \resumeItem{Assisted in the development and implementation of a tool for analyzing and visualizing logical on-board networks.}
+    %         \resumeItem{Conducted analysis of CAN signals, displayed signal statuses on the HMI, and performed testing using CANalyzer}
+    %         \resumeItem{Extracted information from ARXML files to reverse engineer communication protocols (CAN, FlexRay, Ethernet) and contributed to the development of a new electric logic board for electric vehicles.}
+    %         \resumeItem{Conducted research on current electromobility topics: V2G (Vehicle-to-Grid) and Smart Charging.}
+    %         \vspace{0.5em}
+    %         \resumeItemListEnd
+    %     \uline{Worked with:}
+    %     \text{ Matlab $|$ AUTOSAR $|$ CANalyzer $|$ Vector $|$ CAN $|$ Ethernet $|$ Flexray }
+    %     \vspace{0.5em}
+        
+    \resumeSubheading
+        {ITK Engineering}{October 2023 -- March 2024}  
+        {Bachelor Thesis - Grade: 1.3 \vspace{6pt}}{Hybrid: Holzkirchen, Germany}
+        \small\uline{Project: Embedded Computer Vision for Real-Time Temperature Tracking and Inventory Management.}
+        \resumeItemListStart
+            \resumeItem{Developed a smart fridge product for trade fairs, set up Toradex Colibri SoM i.MX8QXP with Basler GigE and FLIR Lepton IR cameras, showcasing real-time object detection and temperature measurement on the embedded device.}
+            \resumeItem{Customized the Linux kernel using a Yocto image for i.MX8, facilitating cross-compilation between x86 and arm64 architectures. Allowing build and deployment over Qt.}
+            \resumeItem{Designed and implemented a multi-threaded program with C++, optimizing the inference time on the iMX8.}
+            \resumeItem{Implemented object detection model with OpenCV and YOLOv5, integrating model pruning and quantization to minimize streaming delay. Applied sensor fusion for temperature estimation.}
+            \vspace{0.5em}
+        \resumeItemListEnd
+        \uline{Worked with:}
+        \text{ OpenCV $|$ Embedded Linux $|$ Qt $|$ Multi Cameras $|$ C++ $|$ Tensorflow $|$ TVM $|$ Docker
+        }
+        \vspace{0.5em}
+       
+        
+    \resumeSubheading
+      {PERI}{January 2023 -- July 2023}
+      {A.I Engineer Intern \vspace{6pt}}{Remote: Weißenhorn, Germany}
+      \small\uline{Project: Contruction Material Identification}
+        \resumeItemListStart
+            \resumeItem{Developed an end-to-end distributed pipeline for an A.I material identification model, including data preprocessing, model training, hyper-parameter tuning, models comparison and model deployment.}
+            \resumeItem{Achieved high accuracy score 90\% with f1 score 85\% in testing of diverse deep learning architectures for 34 different unique classes of construction material.} 
+            \resumeItem{Monitored and tracked the performance of the model to ensure efficiently in managing incoming requests, enhancing the system’s responsiveness and utility.}
+        \resumeItemListEnd
+      \small\uline{Project: Chatbot development}
+        \resumeItemListStart
+            \resumeItem{ Conducted research, implemented, and fine-tuned various large language models to support a range of natural language processing tasks, demonstrating a strong command of cutting-edge NLP technology. }
+            \resumeItem{Processed company's data, achieving an accuracy rate of 85\% in testing.}
+            \resumeItem{Collaborated with cross-functional teams to develop and deploy first prototype, showcasing the versatility 
+                        of large language models in diverse applications within the company.} 
+            \vspace{0.5em}
+      \resumeItemListEnd
+        \uline{Worked with:}
+        \text{Pytorch $|$  DeepSpeed $|$  MLflow  $|$ AzureML $|$ Langchain $|$ Huggingface models}
+        \vspace{0.5em}
+    % \resumeSubheading
+    %   {TUM Phoenix Robotics}{April 2022 -- Present}
+    %   {Student researcher}{Munich, German}
+    % \resumeItemListStart
+    %     \resumeItem{Contributed to the development of computer vision models for lane detection and SLAM of a mini autonomous car.}
+    %     \resumeItem{Researched, implemented traditional computer vision model and fine-tuned deep learning models using transfer learning.} 
+    %     \vspace{-\baselineskip} % Remove space between items
+        
+    %     \resumeItem{Utilize the Point Cloud Library (PCL) to process LiDAR data and implement localization algorithms to precisely determine the car's position within the mapped environment.}
+    %     \resumeItem{Develop and implement mapping algorithms using ROS to create detailed and accurate maps of the 
+    %                 environment for the mini autonomous car.}
+    % \resumeItemListEnd
+    % \vspace{0.5em}
+    % \uline{Worked with:}
+    %     \text{OpenCV $|$  ROS $|$  PCL  $|$ C++  $|$ DeepStream $|$ SLAM Toolbox}
+    % \vspace{0.5em}
+    % \resumeSubheading
+    % {NLT Group}{April 2022 --August 2022}
+    % {Student researcher}{Remote: Ho Chi Minh City, VietNam}
+    % \resumeItemListStart
+    %     \resumeItem{Trained computer vision models for smoke and fire detection utilizing state-of-the-art architectures such as YOLOv4, YOLOv7, and EfficientNet}
+    %     \resumeItem{Conducted comprehensive experiments to assess model performance across accuracy, speed, and efficiency metrics, driving continuous improvement and optimization efforts.}         
+    %     \resumeItem{ Gained experience with popular deep learning frameworks, developed skills in model development, testing and evaluation.}
+    % \resumeItemListEnd
+    %     \uline{Worked with:}
+    %     \text{Sagemaker  $|$ Python $|$  YOLO  $|$ EffiecientNet }
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Extracurricular/ Volunteering}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Enactus München}{May 2023 -- Present}{Member project: CropBuddy}{Munich, Germany}
+            \resumeItemListStart
+                \resumeItem{Developed an application that utilizes weather, soil, and market data to forecast crop prices for Indian farmers, maximizing yield and profitability.}
+                \resumeItem{Spearheaded sponsorship initiatives and engaged with volunteers to support the project's development, demonstrating                 effective leadership and organizational skills.}
+                \resumeItem{Actively consulted with agricultural experts to gain insights into crop cultivation and market dynamics, enhancing my knowledge and commitment to making a positive impact in the agricultural sector.}
+            \resumeItemListEnd
+                \uline{Worked with:}
+        \text{Python $|$ Git $|$  Sagemaker $|$ S3 bucket  $|$ DVC $|$ MLFlow $|$ Docker }
+
+
+        % \resumeSubheading{BCG24}{April 2024 --Present}{Practical course}{Munich, Germany}
+        %     \resumeItemListStart
+        %         \resumeItem{Led team of 5 }
+        %     \resumeItemListEnd
+
+
+
+
+% %-----------PROJECTS-----------
+% \section{Projects}
+%     \vspace{-5pt}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{ML Pipeline for Short--term Rental Prices}}{October 2022}
+%           \resumeItemListStart
+%             \resumeItem{ Implemented an end-to-end pipeline, including EDA, track and monitor experiments, select and deploy the 
+%                         best-performing model to production.}
+%             \resumeItem{Gained experience with machine learning pipeline and machine learning in operation, developed skills in 
+%                         model development, testing and evaluation.}
+%             \resumeItem{Implemented API integration, empowering the system to make real-time model predictions while efficiently managing incoming requests, enhancing the system's responsiveness and utility.}
+%           \resumeItemListEnd 
+%           \vspace{0.5em}
+%         \uline{Worked with:}
+%             \text{MLflow $|$ Weights and Biases $|$ FastAPI $|$ Python}
+%           \vspace{-13pt}
+%           \resumeProjectHeading
+%           {\textbf{Twitter Real-time Sentiment Analysis }}{November 2022}
+%           \resumeItemListStart
+%             \resumeItem{Improved the online experience for users by actively blocking hate speech and offensive content from their Twitter newsfeeds in real-time, fostering a more positive online environment.}
+%             \resumeItem{Leveraged fine-tuned pretrained NLP models to develop an effective hate speech classification system, continuously refining model accuracy to ensure reliable content filtering.}
+%             \resumeItem{ Optimized performance to provide real-time sentiment analysis and content filtering without significant latency.}
+%           \resumeItemListEnd 
+%           \vspace{0.5em}
+%           \uline{Worked with:}
+%             \text{Pytorch $|$ AzureML $|$ Streamlit $|$ TwitterAPI $|$ Javascript}
+%     \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL} \\
+%      \textbf{Developer Tools}{: VS Code, Eclipse, Google Cloud Platform, Android Studio} \\
+%      \textbf{Technologies/Frameworks}{: Linux, Jenkins, GitHub, JUnit, WordPress} \\
+%     }}
+%  \end{itemize}
+%  \vspace{-16pt}
+
+\section{Languages}
+\textbf{}{English: proficient (C1) \hfill German: proficient (C1) \hfill Vietnamese: native (C2)}
+\end{document}
