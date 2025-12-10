@@ -1,0 +1,14 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg4)"/>
+  <circle cx="300" cy="200" r="80" fill="#9B72FF" opacity="0.1"/>
+  <circle cx="300" cy="200" r="60" fill="#7B61FF" opacity="0.2"/>
+  <text x="300" y="210" font-family="monospace" font-size="20" fill="#9B72FF" text-anchor="middle" font-weight="bold">Computer Vision</text>
+  <text x="300" y="240" font-family="monospace" font-size="14" fill="#7B61FF" text-anchor="middle">Embedded • YOLOv5 • Real-Time</text>
+</svg>
+
