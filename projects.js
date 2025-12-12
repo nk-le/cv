@@ -46,17 +46,19 @@ const projects = [
         company: "Intel",
         category: "Machine Learning",
         shortDescription: "Efficient deployment on Xeon processors",
-        fullDescription: "This project tests if CPUs can run large language models cheaper and more efficiently than GPUs. The system has three parts: a testing framework, optimization methods, and a distributed pipeline. The testing framework runs Llama models on Intel Xeon processors with 160 cores. It uses AMX instructions to speed up matrix calculations. The framework compares energy use, speed, and total cost between CPU and GPU systems. Weight-only quantization changes model weights from 32-bit to 8-bit numbers. This keeps accuracy but uses less memory. Speculative decoding uses a small model to guess tokens first, then a larger model checks them. This reduces expensive calculations. We first quantize the model to save memory, then use speculative decoding to make it faster. Together, this gives 4x speed improvement. The distributed pipeline uses all 160 CPU cores by splitting the model across cores. DeepSpeed helps cores communicate efficiently. We used LoRA for fine-tuning because it needs much less memory than full fine-tuning. This makes it possible on CPUs. The framework helps organizations use their existing CPU hardware for AI. Our research shows CPU deployment can work well when you consider total cost and energy use.",
+        fullDescription: "This project tests if CPUs can run large language models cheaper and more efficiently than GPUs. The system has three parts: a testing framework, optimization methods, and a distributed pipeline. The testing framework runs Llama models on Intel Xeon processors with 160 cores. It uses AMX instructions to speed up matrix calculations. The framework compares energy use, speed, and total cost between CPU and GPU systems. We benchmarked INT8 quantized models and measured throughput performance across different configurations. The benchmark results show how INT8 quantization improves inference speed while maintaining accuracy. Weight-only quantization changes model weights from 32-bit to 8-bit numbers. This keeps accuracy but uses less memory. Speculative decoding uses a small model to guess tokens first, then a larger model checks them. This reduces expensive calculations. We first quantize the model to save memory, then use speculative decoding to make it faster. Together, this gives 4x speed improvement. The distributed pipeline uses all 160 CPU cores by splitting the model across cores. DeepSpeed helps cores communicate efficiently. We used LoRA for fine-tuning because it needs much less memory than full fine-tuning. This makes it possible on CPUs. The framework helps organizations use their existing CPU hardware for AI. Our research shows CPU deployment can work well when you consider total cost and energy use.",
         technologies: ["PyTorch", "OpenVINO", "Quantization", "DeepSpeed", "LoRA"],
         features: [
             "4x inference speed improvement on CPU",
             "Weight-only quantization techniques",
+            "INT8 quantization benchmark and throughput analysis",
             "Distributed pipeline for fine-tuning",
             "LoRA optimization for memory efficiency",
             "Energy-efficient AI deployment framework"
         ],
         duration: "November 2024",
-        image: "figures/project-llm-cpu.svg",
+        image: "images/llama.png",
+        benchmarkImage: "images/int8_throughput_evenly_spaced.png",
         icon: "fa-microchip"
     },
     {
@@ -75,7 +77,8 @@ const projects = [
             "Sensor fusion for temperature estimation"
         ],
         duration: "October 2023 - March 2024",
-        image: "figures/project-computer-vision.svg",
+        image: "images/concatimage_best.jpg",
+        detailImage: "images/hardware.png",
         icon: "fa-eye"
     },
     {
@@ -94,7 +97,8 @@ const projects = [
             "Dockerized system with NFC card reader integration"
         ],
         duration: "October 2024",
-        image: "figures/project-placeholder-1.svg",
+        image: "images/objectdetection.png",
+        benchmarkImage: "images/benchmark.png",
         icon: "fa-book"
     }
 ];

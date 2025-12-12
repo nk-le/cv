@@ -57,6 +57,34 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('modal-image').src = project.image;
         document.getElementById('modal-image').alt = project.title;
 
+        // Load benchmark image if available
+        const benchmarkImageContainer = document.getElementById('modal-benchmark-image');
+        console.log('Benchmark image check:', project.benchmarkImage, benchmarkImageContainer);
+        if (project.benchmarkImage && benchmarkImageContainer) {
+            benchmarkImageContainer.innerHTML = `
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Benchmark Results</h3>
+                <img src="${project.benchmarkImage}" alt="INT8 Throughput Benchmark" style="width: 100%; max-width: 800px; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            `;
+            benchmarkImageContainer.style.display = 'block';
+            console.log('Benchmark image displayed');
+        } else if (benchmarkImageContainer) {
+            benchmarkImageContainer.style.display = 'none';
+            benchmarkImageContainer.innerHTML = '';
+        }
+
+        // Load detail image if available (e.g., hardware setup)
+        const detailImageContainer = document.getElementById('modal-detail-image');
+        if (project.detailImage && detailImageContainer) {
+            detailImageContainer.innerHTML = `
+                <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Hardware Setup</h3>
+                <img src="${project.detailImage}" alt="Hardware Setup" style="width: 100%; max-width: 800px; margin-top: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            `;
+            detailImageContainer.style.display = 'block';
+        } else if (detailImageContainer) {
+            detailImageContainer.style.display = 'none';
+            detailImageContainer.innerHTML = '';
+        }
+
         // Load features
         const featuresList = document.getElementById('modal-features');
         featuresList.innerHTML = '';

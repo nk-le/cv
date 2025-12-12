@@ -71,30 +71,7 @@ animateElements.forEach(el => {
     observer.observe(el);
 });
 
-// Contact form handling
-const contactForm = document.getElementById('contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
-    };
-    
-    // Here you would typically send the data to a backend service
-    // For now, we'll just show a success message
-    console.log('Form submitted:', formData);
-    
-    // Show success message (you can customize this)
-    alert('Thank you for your message! We will get back to you soon.');
-    
-    // Reset form
-    contactForm.reset();
-});
+// Contact form removed - users can email directly to ipolo.agent@gmail.com
 
 // Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
