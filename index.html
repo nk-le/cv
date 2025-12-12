@@ -3,39 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AbLe - Advanced Embedded Systems & AI Solutions. Specializing in real-time systems, computer vision, and intelligent automation for next-generation applications.">
-    <title>AbLe - Embedded Systems & AI Solutions</title>
+    <meta name="description" content="ipolo - Advanced Embedded Systems & AI Solutions. Specializing in real-time systems, computer vision, and intelligent automation for next-generation applications.">
+    <title>ipolo - Embedded Systems & AI Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-brand">
-                <img src="figures/logo.svg" alt="AbLe logo" style="height: 40px; vertical-align: middle;">
+                <img src="figures/logo.svg" alt="ipolo logo" style="height: 40px; vertical-align: middle;">
             </div>
             <ul class="nav-menu" id="nav-menu">
-                <li class="dropdown">
-                    <a href="index.html" class="nav-link active">Home <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#home">Hero</a></li>
-                        <li><a href="#vision">Vision</a></li>
-                        <li><a href="#expertise">Expertise</a></li>
-                        <li><a href="#services">Services</a></li>
-                    </ul>
-                </li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li class="dropdown">
-                    <a href="team.html" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="team.html#team">Team</a></li>
-                        <li><a href="team.html#contact">Contact</a></li>
-                    </ul>
-                </li>
+                <li><a href="team.html" class="nav-link">About</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -45,52 +28,27 @@
         </div>
     </nav>
 
-    <!-- Side Navigation -->
-    <div class="side-nav" id="side-nav">
-        <div class="side-nav-header">// navigate</div>
-        <a href="#home" class="side-nav-link active">
-            <span class="side-nav-bullet">></span> Home
-        </a>
-        <a href="#vision" class="side-nav-link">
-            <span class="side-nav-bullet">></span> Vision
-        </a>
-        <a href="#expertise" class="side-nav-link">
-            <span class="side-nav-bullet">></span> Expertise
-        </a>
-        <a href="#services" class="side-nav-link">
-            <span class="side-nav-bullet">></span> Services
-        </a>
-    </div>
 
     <!-- Hero Section -->
     <section class="hero page-section" id="home">
+        <div class="hero-background-image"></div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="terminal-header">
-                <span class="terminal-title">$ ./run_able.sh</span>
-            </div>
-            <h1 class="hero-title animate-fade-in" style="background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">AbLe</h1>
+            <h1 class="hero-title animate-fade-in" style="background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">ipolo</h1>
             <p class="hero-subtitle animate-fade-in-delay">Advanced Embedded Systems & AI Solutions</p>
-            <p style="color: var(--text-secondary); font-size: 1.05rem; margin: 1rem 0 2rem 0; max-width: 650px; margin-left: auto; margin-right: auto; text-align: center;">
+            <p style="color: #1E293B; font-size: 1.1rem; margin: 1.5rem 0 2.5rem 0; max-width: 700px; margin-left: auto; margin-right: auto; text-align: center; line-height: 1.7; font-weight: 500; text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);">
                 Delivering real-time embedded systems, computer vision, and AI solutions for industrial applications.
             </p>
             <div class="hero-buttons animate-fade-in-delay-2">
-                <a href="team.html#contact" class="btn btn-primary">> Get in Touch</a>
-                <a href="portfolio.html" class="btn btn-secondary">> Our Work</a>
+                <a href="team.html#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="portfolio.html" class="btn btn-secondary">Our Work</a>
             </div>
-        </div>
-        <div class="hero-background">
-            <div class="gradient-sphere sphere-1"></div>
-            <div class="gradient-sphere sphere-2"></div>
-            <div class="gradient-sphere sphere-3"></div>
         </div>
     </section>
 
     <!-- Vision Section -->
     <section class="about page-section" id="vision">
         <div class="container">
-            <div class="terminal-header">
-                <span class="terminal-title">$ cat vision.txt</span>
-            </div>
             <h2 class="section-title">Our Vision</h2>
             <p class="section-subtitle">Building the future of autonomous and intelligent systems</p>
             <div class="about-grid">
@@ -146,9 +104,6 @@
     <!-- Skills Section -->
     <section class="skills page-section" id="expertise">
         <div class="container">
-            <div class="terminal-header">
-                <span class="terminal-title">$ ls -la skills/</span>
-            </div>
             <h2 class="section-title">Core Expertise</h2>
             <p class="section-subtitle">Technical capabilities across embedded systems and AI</p>
             <div class="skills-grid">
@@ -239,9 +194,6 @@
     <!-- Services Section -->
     <section class="services page-section" id="services">
         <div class="container">
-            <div class="terminal-header">
-                <span class="terminal-title">$ ./list_services.py</span>
-            </div>
             <h2 class="section-title">Our Services</h2>
             <p class="section-subtitle">Solutions for embedded systems and autonomous applications</p>
             <div class="services-grid">
@@ -283,7 +235,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 AbLe. All rights reserved.</p>
+            <p>&copy; 2025 ipolo. All rights reserved.</p>
             <p>Advanced Embedded Systems & AI Solutions</p>
         </div>
     </footer>

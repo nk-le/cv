@@ -28,18 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
         card.innerHTML = `
             <div class="portfolio-image">
                 <img src="${project.image}" alt="${project.title}" class="project-bg-image">
-                <div class="portfolio-overlay">
-                    <div class="project-number-badge">${number.toString().padStart(2, '0')}</div>
-                    <div class="code-block">
-                        <span class="code-comment">// ${project.company}</span>
-                        <h3>${project.title}</h3>
-                    </div>
-                    <p>${project.shortDescription}</p>
-                    <div class="portfolio-tags">
-                        ${project.technologies.slice(0, 4).map(tech => `<span>${tech}</span>`).join('')}
-                    </div>
-                    <button class="view-details-btn">View Details ></button>
+            </div>
+            <div class="portfolio-card-content">
+                <div class="project-number-badge">${number.toString().padStart(2, '0')}</div>
+                <h3>${project.title}</h3>
+                <p class="project-company">${project.company}</p>
+                <p class="project-description">${project.shortDescription}</p>
+                <div class="portfolio-tags">
+                    ${project.technologies.slice(0, 5).map(tech => `<span>${tech}</span>`).join('')}
                 </div>
+                <button class="view-details-btn">View Details</button>
             </div>
         `;
 

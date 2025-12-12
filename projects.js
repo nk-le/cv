@@ -77,44 +77,6 @@ const projects = [
         duration: "October 2023 - March 2024",
         image: "figures/project-computer-vision.svg",
         icon: "fa-eye"
-    },
-    {
-        id: 5,
-        title: "ML Compilation Toolchain",
-        company: "Infineon",
-        category: "ML Infrastructure",
-        shortDescription: "Apache TVM for ARM optimization",
-        fullDescription: "Contributed to Apache TVM project by resolving quantization bugs for ARM architecture. Explored AI Edge Torch and ExecuTorch frameworks, optimizing models through TVM's AOT compilation.",
-        technologies: ["TVM", "C++", "CMSIS-NN", "ARM", "PyTorch"],
-        features: [
-            "Bug fixes in TVM quantization for ARM",
-            "Model compilation with CMSIS-NN",
-            "Performance benchmarking across frameworks",
-            "AOT compilation optimization",
-            "Cross-platform model deployment"
-        ],
-        duration: "October 2024",
-        image: "figures/project-tvm.svg",
-        icon: "fa-cogs"
-    },
-    {
-        id: 6,
-        title: "Construction Material AI",
-        company: "PERI",
-        category: "AI & ML",
-        shortDescription: "Material identification & chatbot system",
-        fullDescription: "Developed end-to-end distributed AI pipeline for construction material identification with 90% accuracy across 34 material classes. Also implemented and fine-tuned LLM-based chatbot for company data.",
-        technologies: ["PyTorch", "Azure ML", "DeepSpeed", "Langchain", "MLflow"],
-        features: [
-            "90% accuracy across 34 material classes",
-            "Distributed training pipeline on Azure",
-            "LLM chatbot with 85% test accuracy",
-            "Model monitoring and tracking with MLflow",
-            "End-to-end MLOps implementation"
-        ],
-        duration: "January 2023 - July 2023",
-        image: "figures/project-construction-ai.svg",
-        icon: "fa-building"
     }
 ];
 

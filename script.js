@@ -96,7 +96,7 @@ contactForm.addEventListener('submit', (e) => {
     contactForm.reset();
 });
 
-// Active nav link and side nav on scroll
+// Active nav link on scroll
 const sections = document.querySelectorAll('section[id]');
 
 function highlightNavLink() {
@@ -107,23 +107,13 @@ function highlightNavLink() {
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
         const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-        const sideNavLink = document.querySelector(`.side-nav-link[href="#${sectionId}"]`);
         
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            // Update main nav
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('active');
             });
             if (navLink) {
                 navLink.classList.add('active');
-            }
-            
-            // Update side nav
-            document.querySelectorAll('.side-nav-link').forEach(link => {
-                link.classList.remove('active');
-            });
-            if (sideNavLink) {
-                sideNavLink.classList.add('active');
             }
         }
     });
@@ -150,59 +140,6 @@ cards.forEach(card => {
     });
 });
 
-// Typing effect for hero title (optional enhancement)
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.textContent = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
-// Uncomment to enable typing effect
-// window.addEventListener('load', () => {
-//     const heroTitle = document.querySelector('.hero-title');
-//     const originalText = heroTitle.textContent;
-//     typeWriter(heroTitle, originalText, 50);
-// });
-
-// Counter animation for stats (if you want to add stats)
-function animateCounter(element, target, duration = 2000) {
-    let start = 0;
-    const increment = target / (duration / 16);
-    
-    function updateCounter() {
-        start += increment;
-        if (start < target) {
-            element.textContent = Math.ceil(start);
-            requestAnimationFrame(updateCounter);
-        } else {
-            element.textContent = target;
-        }
-    }
-    
-    updateCounter();
-}
-
-// Lazy loading for images (when you add real images)
-if ('loading' in HTMLImageElement.prototype) {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-    images.forEach(img => {
-        img.src = img.dataset.src;
-    });
-} else {
-    // Fallback for browsers that don't support lazy loading
-    const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
-    document.body.appendChild(script);
-}
 
 // Add loading animation
 window.addEventListener('load', () => {
@@ -214,7 +151,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.visibility = 'visible';
 });
 
-// Console message (optional)
-console.log('%c👋 Welcome to our portfolio!', 'font-size: 20px; font-weight: bold; color: #6366f1;');
-console.log('%cInterested in working with us? Get in touch!', 'font-size: 14px; color: #94a3b8;');
 
