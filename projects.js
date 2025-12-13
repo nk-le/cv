@@ -68,7 +68,7 @@ const projects = [
         category: "Computer Vision",
         shortDescription: "Real-time temperature tracking",
         fullDescription: "This project created a smart fridge for trade fairs that finds food items and measures their temperature in real-time. The system has three parts: an embedded computer board, two cameras, and a vision processing system. We used a Toradex Colibri i.MX8QXP board because it has different processors for different tasks. One camera (Basler GigE) takes color images to find objects. The other camera (FLIR Lepton) measures temperature. Both cameras send data to a C++ program with multiple threads. Separate threads handle camera capture, image processing, and AI inference. This uses the board's parallel processing power. The YOLOv5 model finds food items in color images. We used structural pruning to remove unnecessary connections and INT8 quantization to reduce precision. Both techniques make the model smaller and faster on the embedded device. The sensor fusion module combines object locations from the color camera with temperature data from the thermal camera. This is needed because thermal cameras have lower resolution, but the color camera shows exact object edges. We built a custom Linux system using Yocto. This lets us compile code on x86 computers and run it on the arm64 board. It also includes only the needed parts for our hardware. We added Qt framework to show a user interface at trade fairs.",
-        technologies: ["OpenCV", "YOLOv5", "i.MX8", "Embedded Linux", "Qt", "C++"],
+        technologies: ["OpenCV", "YOLOv5", "i.MX8", "Embedded Linux", "Qt"],
         features: [
             "Real-time object detection on embedded device",
             "Multi-camera system (Basler GigE + FLIR IR)",
