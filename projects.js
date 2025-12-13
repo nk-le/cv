@@ -4,15 +4,15 @@
 const projects = [
     {
         id: 1,
-        title: "Safety-Critical Flight Controller",
+        title: "Flight Controller",
         company: "AMDC Ltd.",
-        category: "Embedded Systems",
-        shortDescription: "DO 178C compliant system",
-        fullDescription: "This project creates a certified flight controller for autonomous drones. The system has three main parts: control algorithms, sensor fusion, and safety mechanisms. The control algorithms run on ARM Cortex-M7 processors with a real-time operating system. They work with microsecond precision to keep the drone stable. The sensor fusion module combines data from four sensors: IMU (movement), GPS (position), barometric (height), and magnetometer (direction). When one sensor fails or gives bad data, the others still work. A real-time scheduler makes sure control tasks run on time. Watchdog timers check if the system is working correctly. If something fails, the system switches to a safe mode. We chose ARM Cortex-M7 because it runs tasks predictably and responds quickly to interrupts. DO 178C DAL D certification means the system meets aviation safety rules. We tested the system using hardware-in-the-loop testing with different flight situations and failure cases.",
-        technologies: ["C/C++", "ARM Cortex-M7", "DO 178C DAL D", "Real-Time OS"],
+        category: "Real-Time Embedded System",
+        shortDescription: "Safety-critical autonomous aerial system",
+        fullDescription: "This project creates a certified flight controller for autonomous drones. The system has three main parts: control algorithms, sensor fusion, and safety mechanisms. The control algorithms run on ARM microcontrollers with a real-time operating system. They work with microsecond precision to keep the drone stable. The sensor fusion module combines data from four sensors: IMU (movement), GPS (position), barometric (height), and magnetometer (direction). When one sensor fails or gives bad data, the others still work. A real-time scheduler makes sure control tasks run on time. Watchdog timers check if the system is working correctly. If something fails, the system switches to a safe mode. We chose ARM microcontrollers because they run tasks predictably and respond quickly to interrupts. The certification process ensures the system meets aviation safety rules. We tested the system using hardware-in-the-loop testing with different flight situations and failure cases.",
+        technologies: ["C/C++", "ARM Microcontroller", "Certification", "Real-Time OS"],
         features: [
             "Real-time flight control with microsecond precision",
-            "DO 178C DAL D certification compliance",
+            "Certification compliance for safety-critical systems",
             "Multi-sensor fusion for robust state estimation",
             "Fail-safe and redundancy mechanisms",
             "Hardware-in-the-loop testing and verification"
