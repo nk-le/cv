@@ -7,15 +7,13 @@ const projects = [
         title: "Flight Controller",
         company: "AMDC Ltd.",
         category: "Real-Time Embedded System",
-        shortDescription: "Safety-critical autonomous aerial system",
-        fullDescription: "This project creates a certified flight controller for autonomous drones. The system has three main parts: control algorithms, sensor fusion, and safety mechanisms. The control algorithms run on ARM microcontrollers with a real-time operating system. They work with microsecond precision to keep the drone stable. The sensor fusion module combines data from four sensors: IMU (movement), GPS (position), barometric (height), and magnetometer (direction). When one sensor fails or gives bad data, the others still work. A real-time scheduler makes sure control tasks run on time. Watchdog timers check if the system is working correctly. If something fails, the system switches to a safe mode. We chose ARM microcontrollers because they run tasks predictably and respond quickly to interrupts. The certification process ensures the system meets aviation safety rules. We tested the system using hardware-in-the-loop testing with different flight situations and failure cases.",
+        shortDescription: "Safety-compliant autonomous aerial system",
+        fullDescription: "This project develops a certifiable flight controller featuring three core subsystems: control algorithms, sensor fusion, and safety mechanisms. The control system runs on ARM microcontrollers with a real-time operating system (RTOS), achieving robust stable flight control. Sensor fusion integrates data from IMU, GPS, barometric, and magnetometer sensors with fault-tolerant operation—maintaining functionality despite individual sensor failures. Safety is enforced through a real-time scheduler for deterministic task execution, watchdog timers for system health monitoring, and automatic failsafe mode transitions. The system underwent aviation safety certification and comprehensive hardware-in-the-loop (HIL) testing across various flight scenarios and failure conditions.",
         technologies: ["C/C++", "ARM Microcontroller", "Certification", "Real-Time OS"],
         features: [
-            "Real-time flight control with microsecond precision",
-            "Certification compliance for safety-critical systems",
-            "Multi-sensor fusion for robust state estimation",
-            "Fail-safe and redundancy mechanisms",
-            "Hardware-in-the-loop testing and verification"
+            "Real-time flight control system",
+            "V-Model Development",
+            "Safety compliant"
         ],
         duration: "Sep 2023 - Present",
         image: "figures/project-flight-controller.svg",
