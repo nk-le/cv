@@ -521,6 +521,18 @@ section {
     gap: 2rem;
 }
 
+.services-grid-2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .services-grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+}
+
 .service-card {
     background: #FFFFFF;
     padding: 2.5rem;
