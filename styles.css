@@ -577,6 +577,33 @@ section {
     text-align: left;
 }
 
+.service-sublist {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.service-sublist li {
+    padding: 0.4rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.service-sublist li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.service-card-major {
+    min-height: 280px;
+}
+
 .service-card h3 {
     color: var(--text-primary);
 }
